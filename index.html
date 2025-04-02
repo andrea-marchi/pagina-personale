@@ -4,86 +4,109 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Marchi Andrea</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px;
+      padding: 30px 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
     }
 
     .profile-img {
-        width: 120px;
-  height: 120px;
-  object-fit: contain;
-  
-  padding: 5px;
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      background-color: white;
+      padding: 10px;
+      border-radius: 12px;
+      margin-bottom: 20px;
     }
 
     h1 {
-      margin: 15px 0 10px 0;
-      font-size: 24px;
-      color: #222;
+      font-size: 26px;
+      margin: 10px 0;
     }
 
     .description {
-      font-size: 14px;
-      color: #666;
+      font-size: 15px;
+      color: #ccc;
       margin-bottom: 30px;
-      text-align: center;
-      max-width: 500px;
     }
 
     .button {
-      width: 90%;
-      max-width: 400px;
-      background-color: #ffffff;
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 15px;
+      display: block;
+      width: 100%;
+      background-color: #1e90ff;
+      border: none;
+      border-radius: 10px;
+      padding: 14px;
       margin: 10px 0;
-      text-align: center;
       font-size: 16px;
-      color: #333;
+      color: #fff;
       text-decoration: none;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: background-color 0.2s;
+      transition: background-color 0.3s;
     }
 
     .button:hover {
-      background-color: #f0f0f0;
+      background-color: #1c86ee;
     }
 
     .social-icons {
       margin-top: 30px;
+      font-size: 28px;
     }
 
     .social-icons a {
-      margin: 0 10px;
+      color: #1e90ff;
+      margin: 0 15px;
       text-decoration: none;
-      font-size: 24px;
-      color: #444;
+      transition: color 0.2s;
+    }
+
+    .social-icons a:hover {
+      color: #63b3ed;
     }
   </style>
 </head>
 <body>
-  <img src="immagine.png" alt="Foto profilo" class="profile-img" />
-  <h1>Marchi Andrea</h1>
-  <p class="description">
-    Specialista IT con focus su Cloud Azure, sicurezza e tecnologie Microsoft.<br>
-    Condivido esperienze e risorse su blog, community ed eventi.
-  </p>
+  <div class="container">
+    <img src="immagine.png" alt="Foto profilo" class="profile-img" />
+    <h1>Marchi Andrea</h1>
+    <p class="description">
+      Specialista IT in ambienti Microsoft con focus su Cloud Azure, sicurezza, automazione e infrastrutture moderne.<br>
+      Condivido competenze attraverso articoli, community, eventi e consulenze tecniche.
+    </p>
 
-  <a href="https://azurelab.blog" class="button" target="_blank">AzureLab – Notizie e risorse dal mondo Microsoft</a>
-  <a href="https://www.youtube.com/@AzureMeetupVeneto" class="button" target="_blank">Meet UP Veneto - YouTube</a>
-  <a href="www.linkedin.com/in/andrea-marchi-18057958/" class="button" target="_blank">il mio profilo Linkedin </a>
-  <div class="social-icons">
-   
-    <a href="mailto:andrea-marchi@outlook.it">📧 Contattami</a>
+    <a href="https://azurelab.blog" class="button" target="_blank">🌐 AzureLab – Articoli e risorse</a>
+    <a href="https://www.youtube.com/@MeetUPVeneto" class="button" target="_blank">▶️ Meet UP Veneto - YouTube</a>
+    <a href="www.linkedin.com/in/andrea-marchi-18057958/" class="button" target="_blank">💼 Il mio profilo LinkedIn</a>
+
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/andreamarchi/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:andrea-marchi@outlook.it" title="Contattami">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
   </div>
 </body>
 </html>
