@@ -1,26 +1,80 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Mia Pagina Personale</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            text-align: center;
-            padding-top: 50px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marchi Andrea</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-top: 30px;
+    }
+
+    h1 {
+      margin: 15px 0 30px 0;
+      font-size: 24px;
+      color: #222;
+    }
+
+    .button {
+      width: 90%;
+      max-width: 400px;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 15px;
+      margin: 10px 0;
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.2s;
+    }
+
+    .button:hover {
+      background-color: #f0f0f0;
+    }
+
+    .social-icons {
+      margin-top: 30px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 24px;
+      color: #444;
+    }
+  </style>
 </head>
 <body>
-    <img src="immagine.jpg" alt="Immagine personale">
-    <h1>Il Tuo Nome</h1>
-    <p>Email: <a href="mailto:tuo@email.com">tuo@email.com</a></p>
+  <img src="immagine.png" alt="Foto profilo" class="profile-img" />
+  <h1>Marchi Andrea</h1>
+
+  <a href="https://azurelab.blog" class="button" target="_blank">AzureLab – Notizie e risorse dal mondo Microsoft</a>
+  <a href="https://www.parallels.com/it/products/ras/" class="button" target="_blank">Parallels RAS Italia</a>
+  <a href="https://acronis.com" class="button" target="_blank">Acronis Cloud Tech Community ITA</a>
+  <a href="https://globalazure.net/" class="button" target="_blank">Global Azure Verona</a>
+  <a href="https://www.youtube.com/@MeetUPVeneto" class="button" target="_blank">Meet UP Veneto - YouTube</a>
+
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/andreamarchi/" target="_blank">🔗</a>
+    <a href="mailto:andrea@email.com">📧</a>
+  </div>
 </body>
 </html>
