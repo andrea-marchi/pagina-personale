@@ -12,7 +12,7 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #ffffff;
+      background: linear-gradient(135deg, #f0f8ff, #ffffff);
       color: #333;
       display: flex;
       flex-direction: column;
@@ -51,6 +51,12 @@
       margin-bottom: 30px;
     }
 
+    h2 {
+      font-size: 18px;
+      margin-top: 30px;
+      color: #1e90ff;
+    }
+
     .button {
       display: block;
       width: 100%;
@@ -62,11 +68,13 @@
       font-size: 16px;
       color: #fff;
       text-decoration: none;
-      transition: background-color 0.3s;
+      transition: all 0.3s;
     }
 
     .button:hover {
       background-color: #1c86ee;
+      box-shadow: 0 4px 12px rgba(30, 144, 255, 0.3);
+      transform: translateY(-2px);
     }
 
     .social-icons {
@@ -84,6 +92,21 @@
     .social-icons a:hover {
       color: #63b3ed;
     }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 22px;
+      }
+
+      .button {
+        font-size: 15px;
+        padding: 12px;
+      }
+
+      .description {
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -92,21 +115,29 @@
     <h1>Marchi Andrea</h1>
     <p class="description">
       Specialista IT in ambienti Microsoft con focus su Cloud Azure, sicurezza, automazione e infrastrutture moderne.<br>
-      Condivido competenze attraverso articoli, community, eventi e consulenze tecniche.
+      Condivido competenze attraverso articoli, community, eventi e consulenze tecniche.<br><br>
+      Da oltre 25 anni nel mondo IT, aiuto aziende e professionisti a costruire infrastrutture cloud sicure ed efficienti.
     </p>
 
+    <h2>🌐 I miei canali e contenuti</h2>
     <a href="https://azurelab.blog" class="button" target="_blank">🌐 AzureLab – Articoli e risorse</a>
     <a href="http://www.youtube.com/@AzureMeetupVeneto" class="button" target="_blank">▶️ Azure Meetup Veneto - YouTube</a>
     <a href="https://www.linkedin.com/in/andrea-marchi-18057958/" class="button" target="_blank">💼 Il mio profilo LinkedIn</a>
     <a href="https://www.linkedin.com/in/andrea-marchi-18057958/recent-activity/articles/" class="button" target="_blank">📝 I miei articoli su LinkedIn</a>
     <a href="https://veneto.globalazure.it/" class="button" target="_blank">🌍 Global Azure Veneto</a>
 
-    <h2 style="margin-top: 30px; font-size: 18px;">📱 Seguimi su Telegram</h2>
-
+    <h2>📱 Seguimi su Telegram</h2>
     <a href="https://t.me/+9yD9U_blSuY5NGNk" class="button" target="_blank">💬 Acronis Tech</a>
     <a href="https://t.me/+M7VtuiAKp1xmYjk0" class="button" target="_blank">💬 Parallels RAS Tech</a>
     <a href="https://t.me/+pSqFUtjYUWs2NTVk" class="button" target="_blank">💬 Azure Meetup Veneto</a>
-    
+
+    <h2>🚀 Come posso aiutarti?</h2>
+    <ul style="text-align: left;">
+      <li>Migrazioni in Azure e Microsoft 365</li>
+      <li>Automazione con PowerShell</li>
+      <li>Backup e disaster recovery</li>
+      <li>Consulenza IT per aziende</li>
+    </ul>
 
     <div class="social-icons">
       <a href="https://www.linkedin.com/in/andreamarchi/" target="_blank" title="LinkedIn">
@@ -116,6 +147,9 @@
         <i class="fas fa-envelope"></i>
       </a>
     </div>
-  <p style="margin-top: 20px; font-size: 14px; color: #666;">📧 Contattami: <a href="mailto:andrea-marchi@outlook.it" style="color: #1e90ff; text-decoration: none;">andrea-marchi@outlook.it</a></p>
-
+    <p style="margin-top: 20px; font-size: 14px; color: #666;">
+      📧 Contattami: <a href="mailto:andrea-marchi@outlook.it" style="color: #1e90ff; text-decoration: none;">andrea-marchi@outlook.it</a>
+    </p>
+  </div>
+</body>
 </html>
